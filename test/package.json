@@ -9,11 +9,11 @@
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "reporter":"vitest run --reporter json"
+    "reporter": "vitest run --reporter json"
   },
   "devDependencies": {
     "@elonehoo/is": "workspace:*",
     "c8": "^7.11.3",
-    "vitest": "^0.14.2"
+    "vitest": "^0.15.2"
   }
 }

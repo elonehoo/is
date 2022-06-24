@@ -30,3 +30,7 @@ test('is numericString',()=>{
   expect(is.numericString(1)).toBe(false)
 })
 
+test('is array',()=>{
+  expect(is.array([1, 2, 3])).toBe(true)
+})
+
