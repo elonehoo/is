@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@elonehoo/eslint-config': 2.0.0
       '@elonehoo/is': workspace:*
-      '@types/node': 18.7.13
+      '@types/node': 18.11.9
       bumpp: 8.2.1
       eslint: 8.23.0
       pnpm: 7.11.0
@@ -18,7 +18,7 @@ importers:
     devDependencies:
       '@elonehoo/eslint-config': 2.0.0_eslint@8.23.0+typescript@4.8.3
       '@elonehoo/is': link:core
-      '@types/node': 18.7.13
+      '@types/node': 18.11.9
       bumpp: 8.2.1
       eslint: 8.23.0
       pnpm: 7.11.0
@@ -631,6 +631,10 @@ packages:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
     dependencies:
       '@types/unist': 2.0.6
+    dev: true
+
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: true
 
   /@types/node/18.7.13:
@@ -3836,7 +3840,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.7.13
+      '@types/node': 18.11.9
       chai: 4.3.6
       debug: 4.3.4
       local-pkg: 0.4.2
