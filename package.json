@@ -11,6 +11,7 @@
     "typeCheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "build":"pnpm -C core run build",
     "test": "pnpm -C test run test",
     "coverage": "pnpm -C test run coverage",
     "reporter": "pnpm -C test run reporter"
