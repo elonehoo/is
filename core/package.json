@@ -4,7 +4,12 @@
   "type": "module",
   "description": "Type check values",
   "author": "Elone Hoo <huchengyea@163.com>",
-  "main": "./src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,12 +19,10 @@
     "url": "https://github.com/elonehoo/is/issues"
   },
   "scripts": {
-    "build": "rimraf dist && unbuild",
-    "stub": "unbuild --stub",
-    "prepublishOnly": "pnpm run build"
+    "build": "rimraf dist && tsup"
   },
   "devDependencies": {
-    "rimraf": "3.0.2",
-    "unbuild": "0.8.10"
+    "rimraf": "4.1.2",
+    "tsup": "^6.5.0"
   }
 }

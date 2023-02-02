@@ -246,6 +246,7 @@ is.sharedArrayBuffer = isObjectOfType<SharedArrayBuffer>('SharedArrayBuffer')
 
 is.dataView = isObjectOfType<DataView>('DataView')
 
+//@ts-ignore
 is.enumCase = <T = unknown>(value: unknown, targetEnum: T) => Object.values(targetEnum).includes(value as string)
 
 is.directInstanceOf = <T>(instance: unknown, class_: Class<T>): instance is T => Object.getPrototypeOf(instance) === class_.prototype
