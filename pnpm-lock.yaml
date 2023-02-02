@@ -32,11 +32,9 @@ importers:
     specifiers:
       rimraf: 4.1.2
       tsup: ^6.5.0
-      unbuild: 1.1.1
     devDependencies:
       rimraf: 4.1.2
       tsup: 6.5.0
-      unbuild: 1.1.1
 
   test:
     specifiers:
