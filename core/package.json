@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "rimraf": "4.4.0",
-    "tsup": "^6.6.3"
+    "tsup": "^6.7.0"
   }
 }
