@@ -27,9 +27,6 @@ jobs:
       - name: Install
         run: pnpm install
 
-      - name: Install
-        run: pnpm run build
-
       - name: Test
         run: pnpm run test
   coverage:
@@ -48,9 +45,6 @@ jobs:
 
       - name: Install
         run: pnpm install
-
-      - name: Install
-        run: pnpm run build
 
       - name: Coverage
         run: pnpm run coverage

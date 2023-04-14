@@ -1,32 +1,44 @@
 {
-  "name": "@titem/monorepo",
-  "private": "true",
-  "description": "Type check values",
-  "author": "Elone Hoo <huchengyea@163.com>",
+  "name": "@elonehoo/is",
   "type": "module",
-  "license": "MIT",
   "version": "0.0.2",
+  "description": "Type check values",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/is"
+  },
+  "bugs": {
+    "url": "https://github.com/elonehoo/is/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup",
     "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
     "typeCheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "pnpm -C core run build",
-    "test": "pnpm -C test run test",
-    "coverage": "pnpm -C test run coverage",
-    "reporter": "pnpm -C test run reporter"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
-    "@elonehoo/eslint-config": "2.0.0",
-    "@elonehoo/is": "workspace:*",
+    "@antfu/eslint-config": "^0.38.4",
     "@types/node": "18.15.11",
-    "bumpp": "8.2.1",
+    "@vitest/coverage-c8": "^0.30.1",
+    "bumpp": "9.1.0",
     "eslint": "8.38.0",
-    "pnpm": "7.32.0",
-    "rimraf": "4.4.1",
-    "typescript": "4.9.5",
-    "unbuild": "1.2.0",
+    "pnpm": "8.2.0",
+    "rimraf": "5.0.0",
+    "tsup": "^6.7.0",
+    "typescript": "5.0.4",
+    "unbuild": "1.2.1",
     "vite": "4.2.1",
-    "vitest": "0.30.0"
+    "vitest": "0.30.1"
   }
 }
