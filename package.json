@@ -1,7 +1,7 @@
 {
   "name": "@elonehoo/is",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Type check values",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
