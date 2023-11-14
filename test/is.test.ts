@@ -1,45 +1,45 @@
-import { expect, test } from 'vitest'
+import { expect, it } from 'vitest'
 
 import is from '../src'
 
-test('is undefined', () => {
+it('is undefined', () => {
   expect(is.undefined(undefined)).toBe(true)
 })
 
-test('is null', () => {
+it('is null', () => {
   expect(is.null_(null)).toBe(true)
 })
 
-test('is string', () => {
+it('is string', () => {
   expect(is('a')).toBe('string')
   expect(is.string('a')).toBe(true)
 })
 
-test('is number', () => {
+it('is number', () => {
   expect(is.number(1)).toBe(true)
 })
 
-test('is boolean', () => {
+it('is boolean', () => {
   expect(is.boolean(true)).toBe(true)
 })
 
-test('is numericString', () => {
+it('is numericString', () => {
   expect(is.numericString('')).toBe(false)
   expect(is.numericString(' ')).toBe(false)
   expect(is.numericString(' \t\t\n')).toBe(false)
   expect(is.numericString(1)).toBe(false)
 })
 
-test('is array', () => {
+it('is array', () => {
   expect(is.array([1, 2, 3])).toBe(true)
   expect(is.array([1, '2', 3])).toBe(true)
 })
 
-test('is boundFunction', () => {
+it('is boundFunction', () => {
   expect(is.boundFunction(() => {})).toBe(true)
 })
 
-test('is urlInstance', () => {
+it('is urlInstance', () => {
   const url = new URL('https://elonehoo.me/')
   expect(is.urlInstance(url)).toBe(true)
   expect(is.urlInstance(new URL(url))).toBe(true)
@@ -48,7 +48,7 @@ test('is urlInstance', () => {
   expect(is.urlString(null)).toBe(false)
 })
 
-test('is truthy', () => {
+it('is truthy', () => {
   expect(is.truthy('unicorn')).toBe(true)
   expect(is.truthy('🐦')).toBe(true)
   expect(is.truthy(new Set())).toBe(true)
@@ -58,7 +58,7 @@ test('is truthy', () => {
   expect(is.truthy(BigInt(1))).toBe(true)
 })
 
-test('is falsy', () => {
+it('is falsy', () => {
   expect(is.falsy(false)).toBe(true)
   expect(is.falsy(0)).toBe(true)
   expect(is.falsy('')).toBe(true)
