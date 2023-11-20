@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@antfu/eslint-config':
-    specifier: ^1.2.1
-    version: 1.2.1(eslint@8.54.0)(typescript@5.2.2)(vitest@0.34.6)
+    specifier: ^2.0.0
+    version: 2.0.0(eslint@8.54.0)(typescript@5.2.2)(vitest@0.34.6)
   '@types/node':
     specifier: 20.9.2
     version: 20.9.2
@@ -57,8 +57,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
 
-  /@antfu/eslint-config@1.2.1(eslint@8.54.0)(typescript@5.2.2)(vitest@0.34.6):
-    resolution: {integrity: sha512-/B7jSc9RARxGNZUoxkB2EL7pL7v5ubt25Ah3QbQaCalcIOC3YF+60mL4/G8Oi9Rtdng7ytNGg3bi50voKfqINQ==}
+  /@antfu/eslint-config@2.0.0(eslint@8.54.0)(typescript@5.2.2)(vitest@0.34.6):
+    resolution: {integrity: sha512-kAhbg7loDbT7g3rkLkgZ1R7C5v43wzAOjLMAcdT1xFMGEhAtG8MhBMUXrRCwdaV8ebvLYjO+mqUVCdgrHaFPOA==}
     hasBin: true
     peerDependencies:
       eslint: '>=8.0.0'
