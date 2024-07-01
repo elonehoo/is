@@ -33,7 +33,7 @@
     "@vitest/coverage-v8": "^1.6.0",
     "bumpp": "9.4.1",
     "eslint": "8.57.0",
-    "pnpm": "8.15.8",
+    "pnpm": "9.4.0",
     "rimraf": "5.0.7",
     "tsup": "^8.1.0",
     "typescript": "5.5.2",
