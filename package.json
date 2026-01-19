@@ -28,7 +28,7 @@
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.7.3",
+    "@antfu/eslint-config": "^7.0.1",
     "@types/node": "24.10.7",
     "@vitest/coverage-v8": "^4.0.16",
     "bumpp": "10.3.2",
