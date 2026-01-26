@@ -28,17 +28,17 @@
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.0.1",
+    "@antfu/eslint-config": "^7.2.0",
     "@types/node": "24.10.9",
-    "@vitest/coverage-v8": "^4.0.17",
+    "@vitest/coverage-v8": "^4.0.18",
     "bumpp": "10.4.0",
     "eslint": "9.39.2",
-    "pnpm": "10.28.0",
+    "pnpm": "10.28.1",
     "rimraf": "6.1.2",
     "tsup": "^8.5.1",
     "typescript": "5.9.3",
     "unbuild": "3.6.1",
     "vite": "7.3.1",
-    "vitest": "4.0.17"
+    "vitest": "4.0.18"
   }
 }
