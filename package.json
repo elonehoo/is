@@ -32,7 +32,7 @@
     "@types/node": "24.10.9",
     "@vitest/coverage-v8": "^4.0.18",
     "bumpp": "10.4.0",
-    "eslint": "9.39.2",
+    "eslint": "10.0.0",
     "pnpm": "10.28.2",
     "rimraf": "6.1.2",
     "tsup": "^8.5.1",
