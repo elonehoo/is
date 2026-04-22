@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: latest
       - name: Install pnpm
-        uses: pnpm/action-setup@v5.0.0
+        uses: pnpm/action-setup@v6.0.3
         with:
           version: latest
 
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: latest
       - name: Install pnpm
-        uses: pnpm/action-setup@v5.0.0
+        uses: pnpm/action-setup@v6.0.3
         with:
           version: latest
 
