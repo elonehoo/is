@@ -118,7 +118,7 @@ function is(value: unknown): TypeName {
   if (tagType)
     return tagType
 
-  if (value instanceof String || value instanceof Boolean || value instanceof Number)
+  if (typeof value === 'object' && value !== null && (value instanceof String || value instanceof Boolean || value instanceof Number))
     throw new TypeError('Please don\'t use object wrappers for primitive types')
 
   return 'Object'

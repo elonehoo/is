@@ -1,0 +1,11 @@
+# pnpm 12 rejects lockfile entries published within the last day. These
+# upgrades include recent releases, so the release-age cutoff is disabled.
+minimumReleaseAge: 0
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+shellEmulator: true
+strictDepBuilds: true
+
+allowBuilds:
+  esbuild: true
+  pnpm: true
